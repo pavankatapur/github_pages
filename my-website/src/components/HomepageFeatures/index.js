@@ -49,6 +49,24 @@ function Feature({Svg, title, description}) {
   );
 }
 
+function HomepageHeader() {
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">I love you both always</h1>
+        <p className="hero__subtitle">Welcome to our special space!</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            Get Started
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}
+
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
